@@ -1,6 +1,4 @@
-# Python pour le TS et le TI
-
-## Le traitement du signal et des images avec python
+# Le traitement du signal et des images avec python
 
 Le traitement du signal et des images est un domaine fascinant de l'informatique qui consiste à analyser, modifier et manipuler des signaux et des images numériques pour en extraire des informations ou les améliorer. Avec Python, il existe une multitude d'outils et de bibliothèques pour réaliser ces tâches. Dans ce blog, nous allons explorer quelques-uns de ces outils et comment les utiliser.
 
