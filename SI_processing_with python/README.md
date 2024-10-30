@@ -1,120 +1,98 @@
-
 # Python pour le TS et le TI
 
-## Qu'est-ce que Python ?
+## Le traitement du signal et des images avec python
 
-Python est un langage de programmation polyvalent, créé par Guido van Rossum. Il est connu pour sa syntaxe claire et sa facilité d'utilisation, ce qui en fait un choix populaire pour les débutants et les professionnels.
+Le traitement du signal et des images est un domaine fascinant de l'informatique qui consiste à analyser, modifier et manipuler des signaux et des images numériques pour en extraire des informations ou les améliorer. Avec Python, il existe une multitude d'outils et de bibliothèques pour réaliser ces tâches. Dans ce blog, nous allons explorer quelques-uns de ces outils et comment les utiliser.
 
-## Utilisateurs de Python
+## Bibliothèques Essentielles : 
 
-Python est utilisé dans divers domaines, notamment :
-* Développement logiciel
-* Science des données
-* Administration système
-* Développement web
-* Recherche académique
+- NumPy : Une bibliothèque fondamentale pour les calculs numériques en Python. Elle est particulièrement utile pour manipuler des tableaux (arrays) et effectuer des opérations mathématiques sur ces derniers.
 
-Des entreprises comme Netflix, Spotify et NASA utilisent Python pour diverses applications.
+```python
+import numpy as np
+```
 
-* Avantages de Python
-* Facile à apprendre
-* Bibliothèques étendues
-* Multiplateforme
-* Fort soutien communautaire
+- SciPy : Complémentaire à NumPy, SciPy fournit des fonctions supplémentaires pour la manipulation et l'analyse de données scientifiques.
 
-## Prérequis pour l'installation
-- Connaissances informatiques de base Familiarité avec la ligne de commande  
-- Ordinateur avec connexion Internet
-- Système d'exploitation compatible (Windows 7+, macOS 10.9+, ou Linux)
-- Au moins 4 Go de RAM et 5 Go d'espace disque1
-
-## Deux choix pour installer Python sur votre système.
-
-#### Installation de Python sur différents systèmes et un IDLE
-Télécharger le programme d'installation depuis le site officiel de Python 
-| Système   | Lien      | 
-| :-------  | :-------  | 
-| Windows  | https://www.python.org/downloads/windows/  |
-| Ubuntu | https://www.python.org/downloads/source/  | 
-| MacOS | https://www.python.org/downloads/macos/  | 
+```python
+from scipy import signal
+```
 
 
-Exécuter le programme d'installation
-Personnaliser l'installation (facultatif)
-Lancer l'installation
-Vérifier l'installation via la commande python --version
-Une alternative est d'installer Python via le Microsoft Store
+- Matplotlib : Une bibliothèque de visualisation de données qui permet de créer des graphiques et des tracés de haute qualité.
 
-### IDLE : Environnement de Développement Intégré
-IDLE (Integrated Development and Learning Environment) est l'environnement de développement intégré pour Python, conçu pour faciliter l'apprentissage et le développement. Il est entièrement écrit en Python et fonctionne sur plusieurs plateformes, y compris Windows, Unix et macOS.
-#### Fonctionnalités Principales
-- Console Interactive : Permet d'exécuter du code Python ligne par ligne avec coloration syntaxique pour une meilleure lisibilité.
-- Éditeur de Texte : Offre des fonctionnalités avancées comme l'auto-complétion, l'indentation automatique et la gestion des erreurs.
-- Outils de Débogage : Inclut des options pour définir des points d'arrêt et inspecter les variables.
-- Gestion des Fichiers : Facilite la création, l'ouverture et la sauvegarde de scripts Python.
-- Documentation Intégrée : Accès direct à la documentation Python pour aider les utilisateurs à comprendre les fonctionnalités.
-IDLE est particulièrement adapté aux débutants en raison de son interface intuitive, mais il peut être limité pour des projets plus complexes, où d'autres IDE comme VSCode ou PyCharm pourraient être plus appropriés.
+```python
+import matplotlib.pyplot as plt
+```
+
+- Pandas : Utilisée pour la manipulation et l'analyse de données structurées.
+
+```python
+import pandas as pd
+```
+
+- OpenCV : Une bibliothèque open source puissante pour le traitement des images et des vidéos.
+
+```python
+import cv2
+```
+
+Utilisation des Outils
+1. NumPy et SciPy pour le Traitement du Signal
+Pour traiter un signal, nous avons besoin de générer un signal, puis d'appliquer des transformations. Voici comment procéder :
+
+```python
+import numpy as np
+from scipy import signal
+import matplotlib.pyplot as plt
+
+# Générer un signal sinusoïdal
+t = np.linspace(0, 1, 500, False)  # 1 seconde
+signal = np.sin(2 * np.pi * 5 * t) + 0.5 * np.sin(2 * np.pi * 15 * t)
+
+# Appliquer une transformation Fourier pour analyser les fréquences
+frequencies = np.fft.fftfreq(signal.size, d=t[1]-t[0])
+spectrum = np.fft.fft(signal)
+
+# Tracer le signal et son spectre de fréquence
+fig, axs = plt.subplots(2, 1)
+axs[0].plot(t, signal)
+axs[0].set_title('Signal Temporel')
+axs[1].stem(frequencies, np.abs(spectrum))
+axs[1].set_title('Spectre de Fréquence')
+plt.show()
+```
 
 
-## Facilite la vie en installant Anaconda pour avoir tous les packages
+2. OpenCV pour le Traitement d'Images
+Pour traiter une image, nous allons utiliser OpenCV pour lire, afficher et appliquer des transformations à une image.
 
-#### Installation python avec Anaconda
+```python
+import cv2
+import matplotlib.pyplot as plt
 
-Anaconda est une distribution logicielle gratuite et facile à installer pour Python et R, qui comprend une vaste collection de plus de 7 500 packages open source (incluant R)14. Lors de l'installation d'Anaconda, plus de 250 packages sont automatiquement installés en même temps que Python.
+# Lire une image
+image = cv2.imread('chemin/vers/image.jpg')
 
-## Installation d'anaconda sur différents systèmes
-Télécharger le programme d'installation depuis le site officiel d'anaconda
+# Convertir en niveaux de gris
+gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-| Système   | Lien      | 
-| :-------  | :-------  | 
-| Windows  | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe  |
-| Ubuntu | :https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh  | 
-| MacOS | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.pkg  | 
+# Appliquer un filtre Gaussien
+blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
 
-Ouvrir Anaconda Navigator : Lancez Anaconda Navigator depuis le menu de votre système d'exploitation ou en utilisant le terminal avec la commande anaconda-navigator.
+# Afficher les images
+fig, axs = plt.subplots(1, 3)
+axs[0].imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+axs[0].set_title('Image Originale')
+axs[1].imshow(gray_image, cmap='gray')
+axs[1].set_title('Image en Niveaux de Gris')
+axs[2].imshow(blurred_image, cmap='gray')
+axs[2].set_title('Image Floutée')
+plt.show()
+```
 
-- Lancer Spyder : Dans Anaconda Navigator, cliquez sur l'icône de Spyder pour l'ouvrir / Vous pouvez également lancer Spyder directement depuis le terminal(anaconda prompt) en tapant spyder.
-
-  Et voila !!!!!
-
-## Avant de commencer
-
-### Configuration de spyder 
-
-#### Configuration de la sortie graphique
-Ouvrez Spyder.
-- Allez dans le menu Outils.
-- Sélectionnez Préférences.
-- Dans la fenêtre des préférences, allez dans IPython console > Graphiques (Choisissez graphique) et vous pouvez configurer la sortie graphique selon vos besoins (par exemple, choisir entre une sortie inline ou une nouvelle fenêtre).
-
-##### Effacer les variables avant l'exécution
-- Allez dans Console d'IPython > Exécution.
-- Cochez l'option Effacer toutes les variables avant de démarrer une exécution.
-
-##### Configuration de l'aide dans les préférences
-- Allez dans Aide. 
-- Ici, vous pouvez configurer comment vous souhaitez que l'aide s'affiche (par exemple, en ligne, dans une fenêtre séparée, etc.).
-- Cochez toutes les cases.
-
-#### Indentation automatique
-Allez dans Préférences.
-- Sous Editeur > Indentation, vous pouvez configurer l'indentation automatique. Vous pouvez choisir entre des tabulations ou des espaces et définir le nombre d'espaces par indentation.
-- Pour respecter la PEP8
-- Sélectionnez Utiliser des espaces au lieu des tabulations, car PEP8 recommande d'utiliser 4 espaces pour chaque niveau d'indentation.
-- Définissez le nombre d'espaces par indentation à 4.
-
-## Pour commencer
-
-- Configurer votre projet : Une fois Spyder ouvert, allez dans le menu "Projets" et créez un nouveau projet
-- Donnez un nom à votre projet et choisissez un répertoire pour le stocker
-- Écrire et exécuter du code : Utilisez l'éditeur de texte de Spyder pour écrire votre code Python
-- Par exemple, vous pouvez écrire un simple script comme print("Hello, World!")
-- Pour exécuter le script, cliquez sur le bouton "Exécuter" dans la barre d'outils ou utilisez le raccourci clavier Ctrl + Entrée
-- Explorer les variables : Utilisez l'Explorateur de Variables pour voir les valeurs de vos variables pendant l'exécution de votre programme
-- Vous pouvez trouver cet outil dans l'onglet "Variables" à droite de l'interface
-- Accéder à la documentation : Pour obtenir la documentation d'une fonction ou d'un module, placez simplement le curseur sur le nom de la fonction ou du module et appuyez sur la touche F11
-
-## Feedback
+Conclusion
+Le traitement du signal et des images avec Python est une discipline enrichissante qui permet d'analyser et de transformer des données numériques pour divers usages. Les bibliothèques comme NumPy, SciPy, Matplotlib et OpenCV offrent des outils puissants pour réaliser ces tâches. En utilisant ces outils, vous pouvez explorer une multitude de possibilités et applications dans le monde de la science des données et de l'ingénierie.## Feedback
 
 If you have any feedback, please reach out to us.
 
