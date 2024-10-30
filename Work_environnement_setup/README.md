@@ -1,118 +1,174 @@
+# Python for TS and TI
 
-# Python pour le TS et le TI
+## What is Python?
+Python is a versatile programming language created by Guido van Rossum. It is known for its clear syntax and ease of use, making it a popular choice for both beginners and professionals.
 
-## Qu'est-ce que Python ?
+## Users of Python
+Python is used in various fields, including:
+* Software Development
+* Data Science
+* System Administration
+* Web Development
+* Academic Research
 
-Python est un langage de programmation polyvalent, créé par Guido van Rossum. Il est connu pour sa syntaxe claire et sa facilité d'utilisation, ce qui en fait un choix populaire pour les débutants et les professionnels.
+Companies like Netflix, Spotify, and NASA use Python for various applications.
 
-## Utilisateurs de Python
+## Advantages of Python
+* Easy to learn
+* Extensive libraries
+* Cross-platform
+* Strong community support
 
-Python est utilisé dans divers domaines, notamment :
-* Développement logiciel
-* Science des données
-* Administration système
-* Développement web
-* Recherche académique
+## Versions of Python
+Python has two main versions you may encounter when installing the language:
 
-Des entreprises comme Netflix, Spotify et NASA utilisent Python pour diverses applications.
+### Python 2.x
+This is the older version of Python, with the last release being Python 2.7.18. Although Python 2.x is still used in some legacy applications, it reached its end-of-life in January 2020. This means no updates or bug fixes will be provided anymore. Therefore, it is strongly recommended to use Python 3.x for new projects.
 
-* Avantages de Python
-* Facile à apprendre
-* Bibliothèques étendues
-* Multiplateforme
-* Fort soutien communautaire
+### Python 3.x
+This is the current and actively maintained version of Python, with continuous updates and improvements. Python 3.x has brought many enhancements and changes to the language, making it more efficient and powerful. It is the recommended version for all new projects and installations.
 
-## Prérequis pour l'installation
-- Connaissances informatiques de base Familiarité avec la ligne de commande  
-- Ordinateur avec connexion Internet
-- Système d'exploitation compatible (Windows 7+, macOS 10.9+, ou Linux)
-- Au moins 4 Go de RAM et 5 Go d'espace disque1
+## How to Install Python
+We will now guide you through the process of installing the latest version of Python on your operating system.
 
-## Deux choix pour installer Python sur votre système.
+## Prerequisites for Installation
+* Basic computer knowledge
+* Familiarity with the command line
+* Computer with internet connection
+* Compatible operating system (Windows 7+, macOS 10.9+, or Linux)
+* At least 4 GB of RAM and 5 GB of disk space
 
-#### Installation de Python sur différents systèmes et un IDLE
-Télécharger le programme d'installation depuis le site officiel de Python 
-| Système   | Lien      | 
-| :-------  | :-------  | 
+## Two Choices for Installing Python on Your System
+
+### Installing Python on Different Systems and an IDLE
+Download the installer from the official Python website:
+
+| System  | Link  |
+| :-------  | :-------  |
 | Windows  | https://www.python.org/downloads/windows/  |
-| Ubuntu | https://www.python.org/downloads/source/  | 
-| MacOS | https://www.python.org/downloads/macos/  | 
+| Ubuntu | https://www.python.org/downloads/source/  |
+| MacOS | https://www.python.org/downloads/macos/  |
 
+Run the installer
+Customize the installation (optional)
+Start the installation
+Verify the installation via the command `python --version`
 
-Exécuter le programme d'installation
-Personnaliser l'installation (facultatif)
-Lancer l'installation
-Vérifier l'installation via la commande python --version
-Une alternative est d'installer Python via le Microsoft Store
+An alternative is to install Python via the Microsoft Store.
 
-### IDLE : Environnement de Développement Intégré
-IDLE (Integrated Development and Learning Environment) est l'environnement de développement intégré pour Python, conçu pour faciliter l'apprentissage et le développement. Il est entièrement écrit en Python et fonctionne sur plusieurs plateformes, y compris Windows, Unix et macOS.
-#### Fonctionnalités Principales
-- Console Interactive : Permet d'exécuter du code Python ligne par ligne avec coloration syntaxique pour une meilleure lisibilité.
-- Éditeur de Texte : Offre des fonctionnalités avancées comme l'auto-complétion, l'indentation automatique et la gestion des erreurs.
-- Outils de Débogage : Inclut des options pour définir des points d'arrêt et inspecter les variables.
-- Gestion des Fichiers : Facilite la création, l'ouverture et la sauvegarde de scripts Python.
-- Documentation Intégrée : Accès direct à la documentation Python pour aider les utilisateurs à comprendre les fonctionnalités.
-IDLE est particulièrement adapté aux débutants en raison de son interface intuitive, mais il peut être limité pour des projets plus complexes, où d'autres IDE comme VSCode ou PyCharm pourraient être plus appropriés.
+### IDLE: Integrated Development Environment
+IDLE (Integrated Development and Learning Environment) is the integrated development environment for Python, designed to facilitate learning and development. It is fully written in Python and works on multiple platforms, including Windows, Unix, and macOS.
 
+#### Main Features
+* **Interactive Console**: Allows you to execute Python code line by line with syntax highlighting for better readability.
+* **Text Editor**: Offers advanced features like auto-completion, automatic indentation, and error management.
+* **Debugging Tools**: Includes options to set breakpoints and inspect variables.
+* **File Management**: Facilitates creating, opening, and saving Python scripts.
+* **Integrated Documentation**: Direct access to Python documentation to help users understand features.
 
-## Facilite la vie en installant Anaconda pour avoir tous les packages
+IDLE is particularly suitable for beginners due to its intuitive interface but may be limited for more complex projects where other IDEs like VSCode or PyCharm might be more appropriate.
 
-#### Installation python avec Anaconda
+## Simplifying Life by Installing Anaconda for All Packages
 
-Anaconda est une distribution logicielle gratuite et facile à installer pour Python et R, qui comprend une vaste collection de plus de 7 500 packages open source (incluant R)14. Lors de l'installation d'Anaconda, plus de 250 packages sont automatiquement installés en même temps que Python.
+### Installing Python with Anaconda
+Anaconda is a free and easy-to-install software distribution for Python and R that includes a vast collection of over 7,500 open-source packages (including R). When installing Anaconda, over 250 packages are automatically installed alongside Python.
 
-## Installation d'anaconda sur différents systèmes
-Télécharger le programme d'installation depuis le site officiel d'anaconda
+### Installing Anaconda on Different Systems
+Download the installer from the official Anaconda website:
 
-| Système   | Lien      | 
-| :-------  | :-------  | 
+| System  | Link  |
+| :-------  | :-------  |
 | Windows  | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe  |
-| Ubuntu | :https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh  | 
-| MacOS | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.pkg  | 
+| Ubuntu | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh  |
+| MacOS | https://repo.anaconda.com/archive/Anaconda3-2024.10-1-MacOSX-arm64.pkg  |
 
-Ouvrir Anaconda Navigator : Lancez Anaconda Navigator depuis le menu de votre système d'exploitation ou en utilisant le terminal avec la commande anaconda-navigator.
+Open Anaconda Navigator: Launch Anaconda Navigator from your operating system's menu or using the terminal with the command `anaconda-navigator`.
 
-- Lancer Spyder : Dans Anaconda Navigator, cliquez sur l'icône de Spyder pour l'ouvrir / Vous pouvez également lancer Spyder directement depuis le terminal(anaconda prompt) en tapant spyder.
+Launch Spyder: In Anaconda Navigator, click on the Spyder icon to open it. You can also launch Spyder directly from the terminal (anaconda prompt) by typing `spyder`.
 
-  Et voila !!!!!
+And there you go!
 
-## Avant de commencer
+To check the version of Python, type in the terminal:
+```bash
+python --version
+```
 
-### Configuration de spyder 
+If everything is in order, you do not need to do anything else. However, if you want to separate your projects and work with distinct environments while only installing necessary libraries for each project, it is essential to set up a virtual environment (See section on Configuring a Virtual Environment).
 
-#### Configuration de la sortie graphique
-Ouvrez Spyder.
-- Allez dans le menu Outils.
-- Sélectionnez Préférences.
-- Dans la fenêtre des préférences, allez dans IPython console > Graphiques (Choisissez graphique) et vous pouvez configurer la sortie graphique selon vos besoins (par exemple, choisir entre une sortie inline ou une nouvelle fenêtre).
+Now that everything is set up, there’s just one last step.
 
-##### Effacer les variables avant l'exécution
-- Allez dans Console d'IPython > Exécution.
-- Cochez l'option Effacer toutes les variables avant de démarrer une exécution.
+## Configuring Spyder
 
-##### Configuration de l'aide dans les préférences
-- Allez dans Aide. 
-- Ici, vous pouvez configurer comment vous souhaitez que l'aide s'affiche (par exemple, en ligne, dans une fenêtre séparée, etc.).
-- Cochez toutes les cases.
+### Configuring Graphical Output
+1. Open Spyder.
+2. Go to the **Tools** menu.
+3. Select **Preferences**.
+4. In the preferences window, go to **IPython console > Graphics** (Choose graphics) and configure graphical output as needed (for example, choose between inline output or a new window).
 
-#### Indentation automatique
-Allez dans Préférences.
-- Sous Editeur > Indentation, vous pouvez configurer l'indentation automatique. Vous pouvez choisir entre des tabulations ou des espaces et définir le nombre d'espaces par indentation.
-- Pour respecter la PEP8
-- Sélectionnez Utiliser des espaces au lieu des tabulations, car PEP8 recommande d'utiliser 4 espaces pour chaque niveau d'indentation.
-- Définissez le nombre d'espaces par indentation à 4.
+### Clearing Variables Before Execution
+1. Go to **IPython Console > Execution**.
+2. Check the option to **Clear all variables before starting execution**.
 
-## Pour commencer
+### Configuring Help in Preferences
+1. Go to **Help**.
+2. Here you can configure how you want help displayed (for example, inline, in a separate window, etc.).
+3. Check all boxes.
 
-- Configurer votre projet : Une fois Spyder ouvert, allez dans le menu "Projets" et créez un nouveau projet
-- Donnez un nom à votre projet et choisissez un répertoire pour le stocker
-- Écrire et exécuter du code : Utilisez l'éditeur de texte de Spyder pour écrire votre code Python
-- Par exemple, vous pouvez écrire un simple script comme print("Hello, World!")
-- Pour exécuter le script, cliquez sur le bouton "Exécuter" dans la barre d'outils ou utilisez le raccourci clavier Ctrl + Entrée
-- Explorer les variables : Utilisez l'Explorateur de Variables pour voir les valeurs de vos variables pendant l'exécution de votre programme
-- Vous pouvez trouver cet outil dans l'onglet "Variables" à droite de l'interface
-- Accéder à la documentation : Pour obtenir la documentation d'une fonction ou d'un module, placez simplement le curseur sur le nom de la fonction ou du module et appuyez sur la touche F11
+### Automatic Indentation
+1. Go to **Preferences**.
+2. Under **Editor > Indentation**, you can configure automatic indentation. You can choose between tabs or spaces and set the number of spaces per indentation level.
+
+#### To comply with PEP8:
+* Select **Use spaces instead of tabs** since PEP8 recommends using 4 spaces for each level of indentation.
+* Set the number of spaces per indentation level to 4.
+
+If you've made it this far, congratulations! Your working environment is now configured.
+
+## Getting Started
+1. **Configure your project**: Once Spyder is open, go to the "Projects" menu and create a new project.
+   - Name your project and choose a directory to store it.
+2. **Write and execute code**: Use Spyder's text editor to write your Python code.
+   - For example, you can write a simple script like `print("Hello, World!")`.
+   - To execute the script, click on the "Run" button in the toolbar or use the keyboard shortcut `Ctrl + Enter`.
+3. **Explore variables**: Use the Variable Explorer to see your variable values during program execution.
+   - You can find this tool in the "Variables" tab on the right side of the interface.
+4. **Access documentation**: To get documentation for a function or module, simply hover over its name and press `F11`.
+
+## Configuring a Virtual Environment
+
+Virtual environments are valuable tools that allow managing multiple distinct Python installations. This is particularly useful when working on multiple Python projects simultaneously. Instead of maintaining a single cluttered installation with all imaginable packages, virtual environments ensure each project has its own clean space with only necessary tools.
+
+To set up your first virtual environment, open Terminal on macOS or Anaconda Prompt on Windows. Then create a new virtual environment with the following command:
+
+```bash
+conda create --name Lab1 python=3.4
+```
+
+Here, the `--name` parameter specifies the name of the virtual environment; in this case, "Lab1". The `python=3.4` parameter is optional but indicates that this virtual environment should use version 3.4.x of Python, ensuring everyone uses the same version.
+
+Conda may install some packages while asking for confirmation before proceeding. Once installation is complete, activate your conda environment by typing `conda activate Lab1` on macOS or `activate Lab1` on Windows. Your command prompt should now display the name of your environment in brackets before the command line like this:
+
+```text
+(Lab1) ➜  ~
+```
+
+This confirms that you are now in the environment you just created and that all Python packages you install will remain within this sandbox. Next, let’s install some basic tools:
+bash
+conda install numpy jupyter pip matplotlib
+
+You can list as many package names as needed after install, and conda will install them all at once. Again, it may ask for confirmation before installing packages you don’t already have.
+To access this environment type:
+```bash
+conda activate ./envs
+```
+
+You can deactivate your environment at any time using conda deactivate on macOS or simply deactivate on Windows.
+
+```bash
+conda deactivate ./envs
+``` 
+For more information check this link: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 
 ## Feedback
 
