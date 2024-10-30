@@ -6,7 +6,7 @@ Welcome to this repository! This repo contains a basic starting guide for using 
 
 ## Getting Started
 
-1.**The first folder** contains installation guide to setup the envirenement work to have the essential tools to perform the needed taskes.
+The first folder contains installation guide to setup the envirenement work to have the essential tools to perform the needed taskes.
 
 ## Contents
 - Introduction to Python
@@ -16,7 +16,7 @@ Welcome to this repository! This repo contains a basic starting guide for using 
 - Managing Envirements
 
 
-2. **The second  folder** contains the essential libraries to perform the needed processing.
+The second  folder contains the essential libraries to perform the needed processing.
 **/!\/**: Ensure you have Python and the necessary libraries installed (see link). 
 The primary libraries used are:
   ### libraries for data manipulation
