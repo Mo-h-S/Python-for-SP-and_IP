@@ -15,31 +15,6 @@ The first folder contains installation guide to setup the envirenement work to h
 - Configration of the IDLE (Spdeyr)
 - Managing Envirements
 
-  ### libraries for data manipulation
-   - NumPy / Pandas
-   - Matplotlib
-  ### library for signal processing
-   - SciPy
-  ### libraries for Image processing
-   - Scikit-image
-   - OpenCV
-
-- In addition to examples of:
-- Signal Processing
-  - Generating and analyzing signals
-  - Fourier transforms
-- Image Processing
-  - Reading and displaying images
-  - Basic image transformations (grayscale conversion, blurring)
-
-1. **Installation**: Ensure you have Python and the necessary libraries installed. The primary libraries used are:
-
-
-2. **Setup**: Clone this repository to your local machine using:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
-
 ## Contents
 1. **libraries**:  The second  folder contains the essential libraries to perform the needed processing.
 **/!\/**: Ensure you have Python and the necessary libraries installed (see link). 
