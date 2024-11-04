@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python pour le traitement du signal et d'image
 ## MATLAB à Python
 
@@ -44,6 +45,9 @@ Ou ouvrez-le sur Colab
 [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mohamed-sra/Python-pour-le-TS-et-le-TI/blob/main/SI_processing_with%20python/Matlab%20to%20Python.ipynb)
 
 ## 2. Le traitement du signal et des images avec python
+=======
+# Le traitement du signal et des images avec python
+>>>>>>> 21fdea6810aa91057c80d1f7f4885f82657cb63b
 
 Le traitement du signal et des images est un domaine fascinant de l'informatique qui consiste à analyser, modifier et manipuler des signaux et des images numériques pour en extraire des informations ou les améliorer. Avec Python, il existe une multitude d'outils et de bibliothèques pour réaliser ces tâches. Dans ce blog, nous allons explorer quelques-uns de ces outils et comment les utiliser.
 

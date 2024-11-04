@@ -1,4 +1,4 @@
-# Python for TS and TI
+# Python for SP and TP
 
 ## What is Python?
 Python is a versatile programming language created by Guido van Rossum. It is known for its clear syntax and ease of use, making it a popular choice for both beginners and professionals.
