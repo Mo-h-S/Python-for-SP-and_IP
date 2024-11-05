@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# Python pour le traitement du signal et d'image
-## MATLAB à Python
-=======
 # Python for Signal and Image Processing
->>>>>>> 9f6e6b5d7dd1a6ddf3d709416300bf4ece7f7978
+
 
 ## MATLAB to Python
 
@@ -46,12 +42,10 @@ To help with the transition from MATLAB to Python, see:
 
 Notebook
 
-<<<<<<< HEAD
-## 2. Le traitement du signal et des images avec python
-=======
+
 Or open it on Colab
-[Open In Collab
->>>>>>> 9f6e6b5d7dd1a6ddf3d709416300bf4ece7f7978
+Open In Collab
+
 
 ## 2. Signal and Image Processing with Python
 
