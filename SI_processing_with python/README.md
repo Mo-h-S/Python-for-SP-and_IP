@@ -64,6 +64,8 @@ This part presents an overview of the essential Python libraries for signal proc
   [Documentation link](https://pandas.pydata.org/docs/)
 - **scikit-image**: Specialized in image processing  
   [Documentation link](https://scikit-image.org/docs/stable/)
+- **pathlib**: For object-oriented filesystem paths  
+  [Documentation link](https://docs.python.org/3/library/pathlib.html)
 
 Each tool is presented with:
 
