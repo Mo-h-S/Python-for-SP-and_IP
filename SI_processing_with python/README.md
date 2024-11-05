@@ -32,7 +32,7 @@ This section addresses the key differences between MATLAB and Python, thus facil
 
 With MATLAB, we can create vectors and arrays of numbers or text, which are intuitive and quite useful. Essentially, we can access any value in a vector or matrix based on its position (e.g., list(1,2)). With Python, in addition to lists, we discover different and very powerful structures, such as dictionaries. Dictionaries are data structures that can be accessed by the "key" of the value and not by its position in the structure. Want to know its usefulness? In a phone book, which would be easier: finding numbers by position in the list or by the contact's name? :D Moreover, there is a distinction between decimal numbers (float) and integers. That's why it's better to first familiarize yourself with the existing variable types and structures in Python! It's a considerable advantage.
 
-To help with the transition from MATLAB to Python: see here
+To help with the transition from MATLAB to Python: [see here](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html#general-purpose-equivalents)
 
 Where you can find a summary of MATLAB/Python correspondences
 
@@ -40,11 +40,11 @@ Where you can find a summary of MATLAB/Python correspondences
 
 To help with the transition from MATLAB to Python, see:
 
-Notebook
+[Notebook](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Matlab%20to%20Python.ipynb)
 
 
 Or open it on Colab
-Open In Collab
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Matlab%20to%20Python.ipynb)
 
 
 ## 2. Signal and Image Processing with Python
@@ -54,11 +54,18 @@ Signal and image processing is a fascinating field of computer science that invo
 ## Essential Tools for Signal Processing with Python
 
 This part presents an overview of the essential Python libraries for signal processing, including:
-- **NumPy** : For mathematical operations and array manipulation
-- **SciPy** : Offering advanced functionalities for signal processing
-- **Matplotlib** : For data and signal visualization
-- **Pandas** : For structured data manipulation and analysis
-- **scikit-image** : Specialized in image processing
+- **NumPy**: For mathematical operations and array manipulation  
+  [Documentation link](https://numpy.org/doc/stable/)
+- **SciPy**: Offering advanced functionalities for signal processing  
+  [Documentation link](https://docs.scipy.org/doc/scipy/)
+- **Matplotlib**: For data and signal visualization  
+  [Documentation link](https://matplotlib.org/stable/contents.html)
+- **Pandas**: For structured data manipulation and analysis  
+  [Documentation link](https://pandas.pydata.org/docs/)
+- **scikit-image**: Specialized in image processing  
+  [Documentation link](https://scikit-image.org/docs/stable/)
+- **pathlib**: For object-oriented filesystem paths  
+  [Documentation link](https://docs.python.org/3/library/pathlib.html)
 
 Each tool is presented with:
 
@@ -67,11 +74,14 @@ Each tool is presented with:
 
 See:
 
-Notebook
+[Notebook](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Image_signal%20processing_with_python.ipynb#)
+
 Or open it on Colab
-[Open In Collab
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Image_signal%20processing_with_python.ipynb#)
+
 
 Signal and image processing with Python is an enriching discipline that allows for analyzing and transforming digital data for various uses. Libraries such as NumPy, SciPy, Matplotlib, and OpenCV offer powerful tools to perform these tasks. By using these tools, you can explore a multitude of possibilities and applications in the world of data science and engineering.
+
 ## Conclusion
 In conclusion, this repository aims to facilitate the transition of MATLAB users to Python for signal and image processing, while highlighting the advantages and power of the Python ecosystem in this field.
 ## Feedback
