@@ -13,6 +13,8 @@ The envirenement setup folder contains installation guide to setup the envirenem
 - Lazy guide to setup the envirenement work
 - Configration of the IDLE (Spdeyr)
 - Managing Envirements
+  
+[see link](https://github.com/Mo-h-S/Python-for-SP-and_IP/tree/a14012be2a51c8fde4cf5dfaedc67aa7214c0dd2/Work_environnement_setup)
 
 ## Getting Started 
 The second  folder contains the essential libraries to perform the needed processing.
@@ -34,6 +36,19 @@ In addition to examples of:
 - Image Processing
   - Reading and displaying images
   - Basic image transformations (grayscale conversion, blurring)
+
+## Quick Notebook Links 
+### Matlab to python
+
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Matlab%20to%20Python.ipynb)
+
+### Image and signal processing with python
+
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Image_signal%20processing_with_python.ipynb#)
+
+### Path management
+
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mo-h-S/Python-for-SP-and_IP/blob/main/SI_processing_with%20python/Path_management.ipynb)
 
 ## Feedback
 
