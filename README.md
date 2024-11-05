@@ -16,7 +16,7 @@ The envirenement setup folder contains installation guide to setup the envirenem
 
 ## Getting Started 
 The second  folder contains the essential libraries to perform the needed processing.
-**/!\/**: Ensure you have Python and the necessary libraries installed (see link). 
+**/!\/**: Ensure you have Python and the necessary libraries installed [see link](https://github.com/Mo-h-S/Python-for-SP-and_IP/tree/a14012be2a51c8fde4cf5dfaedc67aa7214c0dd2/Work_environnement_setup) . 
 The primary libraries used are:
   ### libraries for data manipulation
    - NumPy / Pandas
